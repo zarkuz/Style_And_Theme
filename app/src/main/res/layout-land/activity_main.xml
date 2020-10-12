@@ -6,20 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="@color/colorBg">
     <ImageView
         android:layout_width="200px"
         android:layout_height="200px"
         android:src="@drawable/logo_pei"/>
+    <ImageView
+        android:layout_width="20px"
+        android:layout_height="220px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorBorder"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <EditText
         style="@style/EditTextLogin"
-        android:textAlignment="center"
         android:hint="User Name"/>
     <EditText
         style="@style/EditTextLogin"
         android:hint="Password"
-        android:textAlignment="center"
         android:inputType="textPassword"/>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -32,5 +40,6 @@
             style="@style/ButtonLogin"
             android:layout_marginLeft="30px"
             android:text="Daftar"/>
+    </LinearLayout>
     </LinearLayout>
 </LinearLayout>
